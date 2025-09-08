@@ -1,11 +1,21 @@
 {
   "name": "nyeonseok-modal",
-  "version": "1.0.0",
-  "main": "index.ts",
-  "type": "module",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && xcopy src\\assets dist\\assets /E /I /Y && xcopy src\\css dist\\css /E /I /Y",
     "preview": "vite preview"
   },
   "keywords": [],
