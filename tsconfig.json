@@ -6,8 +6,12 @@
     "moduleResolution": "node",
     "jsx": "react-jsx",
     "strict": true,
-    "noEmit": true,
-    "skipLibCheck": true
+    "noEmit": false,
+    "skipLibCheck": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "allowImportingTsExtensions": false,
+    "types": ["node"] // Node 타입 추가
   },
   "include": ["src"]
 }
