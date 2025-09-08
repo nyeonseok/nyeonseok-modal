@@ -47,15 +47,17 @@
 .modalContent {
   display: flex;
   flex: 1.5;
-  padding-left: 1.1rem;
+  padding: 0 1.1rem;
   align-items: center;
-  /* background-color: red; */
 }
 .contentText {
   color: #484b50;
   font-size: 0.85rem;
   font-weight: 500;
   white-space: pre-line;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .modalBtnDiv {
