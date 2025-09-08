@@ -6,6 +6,7 @@ CSS, SVG 등 필요한 리소스는 모달 내부에서 자동으로 처리되�
 ---
 
 ## 1️⃣ 설치
+**v** 1.0.0
 
 ```bash
 # 프로젝트에 npm 패키지 설치
@@ -58,6 +59,10 @@ const [modalOnConfirm, setModalOnConfirm] = useState<(() => void) | null>(null);
   );
 }
 ```
+💡 참고 사항
+- `modalTitle`, `modalText` 모두 일정 너비를 넘어가면 ... 처리됨.
+- `modalText`에 긴 글을 적고싶을 때, `\n` 사용하면 줄바꿈 가능.
+
 
 <br>
 
