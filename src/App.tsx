@@ -11,7 +11,9 @@ function App() {
   );
   const modalOpen = () => {
     setModalTitle("모달 Title");
-    setModalText("모달 Text");
+    setModalText(
+      "모달 TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText"
+    );
     setModalOnConfirm(() => () => {
       //넣고 싶은 함수 로직 넣으면 됨, 넣기 싫으면 setModalOnConfirm을 안 적어도 괜찮다.(그럼 그냥 확인 누를 시 모달창 닫힘)
     });
